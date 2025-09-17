@@ -1,0 +1,43 @@
+{
+	"sources" : 
+	[
+		{
+			"file" : "/home/maxitai/ncs/prjs/mvp/build/_sysbuild/sysbuild/images/CMakeFiles/mvp"
+		},
+		{
+			"file" : "/home/maxitai/ncs/prjs/mvp/build/_sysbuild/sysbuild/images/CMakeFiles/mvp.rule"
+		},
+		{
+			"file" : "/home/maxitai/ncs/prjs/mvp/build/_sysbuild/sysbuild/images/CMakeFiles/mvp-complete.rule"
+		},
+		{
+			"file" : "/home/maxitai/ncs/prjs/mvp/build/_sysbuild/sysbuild/images/mvp-prefix/src/mvp-stamp/mvp-build.rule"
+		},
+		{
+			"file" : "/home/maxitai/ncs/prjs/mvp/build/_sysbuild/sysbuild/images/mvp-prefix/src/mvp-stamp/mvp-configure.rule"
+		},
+		{
+			"file" : "/home/maxitai/ncs/prjs/mvp/build/_sysbuild/sysbuild/images/mvp-prefix/src/mvp-stamp/mvp-download.rule"
+		},
+		{
+			"file" : "/home/maxitai/ncs/prjs/mvp/build/_sysbuild/sysbuild/images/mvp-prefix/src/mvp-stamp/mvp-install.rule"
+		},
+		{
+			"file" : "/home/maxitai/ncs/prjs/mvp/build/_sysbuild/sysbuild/images/mvp-prefix/src/mvp-stamp/mvp-mkdir.rule"
+		},
+		{
+			"file" : "/home/maxitai/ncs/prjs/mvp/build/_sysbuild/sysbuild/images/mvp-prefix/src/mvp-stamp/mvp-patch.rule"
+		},
+		{
+			"file" : "/home/maxitai/ncs/prjs/mvp/build/_sysbuild/sysbuild/images/mvp-prefix/src/mvp-stamp/mvp-update.rule"
+		}
+	],
+	"target" : 
+	{
+		"labels" : 
+		[
+			"mvp"
+		],
+		"name" : "mvp"
+	}
+}

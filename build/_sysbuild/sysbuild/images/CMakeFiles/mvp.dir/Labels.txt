@@ -1,0 +1,13 @@
+# Target labels
+ mvp
+# Source files and their labels
+/home/maxitai/ncs/prjs/mvp/build/_sysbuild/sysbuild/images/CMakeFiles/mvp
+/home/maxitai/ncs/prjs/mvp/build/_sysbuild/sysbuild/images/CMakeFiles/mvp.rule
+/home/maxitai/ncs/prjs/mvp/build/_sysbuild/sysbuild/images/CMakeFiles/mvp-complete.rule
+/home/maxitai/ncs/prjs/mvp/build/_sysbuild/sysbuild/images/mvp-prefix/src/mvp-stamp/mvp-build.rule
+/home/maxitai/ncs/prjs/mvp/build/_sysbuild/sysbuild/images/mvp-prefix/src/mvp-stamp/mvp-configure.rule
+/home/maxitai/ncs/prjs/mvp/build/_sysbuild/sysbuild/images/mvp-prefix/src/mvp-stamp/mvp-download.rule
+/home/maxitai/ncs/prjs/mvp/build/_sysbuild/sysbuild/images/mvp-prefix/src/mvp-stamp/mvp-install.rule
+/home/maxitai/ncs/prjs/mvp/build/_sysbuild/sysbuild/images/mvp-prefix/src/mvp-stamp/mvp-mkdir.rule
+/home/maxitai/ncs/prjs/mvp/build/_sysbuild/sysbuild/images/mvp-prefix/src/mvp-stamp/mvp-patch.rule
+/home/maxitai/ncs/prjs/mvp/build/_sysbuild/sysbuild/images/mvp-prefix/src/mvp-stamp/mvp-update.rule

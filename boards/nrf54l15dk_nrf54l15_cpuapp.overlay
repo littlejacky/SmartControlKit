@@ -1,0 +1,74 @@
+// PWM20: 专门用于马达
+&pwm20 {
+    status = "okay";
+    pinctrl-0 = <&pwm20_default_motor>;
+    pinctrl-1 = <&pwm20_sleep_motor>;
+    pinctrl-names = "default", "sleep";
+};
+
+// PWM21: 专门用于双色LED
+&pwm21 {
+    status = "okay";
+    pinctrl-0 = <&pwm21_default_leds>;
+    pinctrl-1 = <&pwm21_sleep_leds>;
+    pinctrl-names = "default", "sleep";
+};
+
+&pinctrl {
+    // PWM20 引脚配置 - 仅马达
+    pwm20_default_motor: pwm20_default_motor {
+        group1 {
+            psels = <NRF_PSEL(PWM_OUT0, 1, 10)>;   /* 马达 P1.10, PWM20 ch0 */
+        };
+    };
+    pwm20_sleep_motor: pwm20_sleep_motor {
+        group1 {
+            psels = <NRF_PSEL(PWM_OUT0, 1, 10)>;
+            low-power-enable;
+        };
+    };
+
+    // PWM21 引脚配置 - 仅双色LED  
+    pwm21_default_leds: pwm21_default_leds {
+        group1 {
+            psels = <NRF_PSEL(PWM_OUT0, 1, 11)>,   /* 红灯 P1.11, PWM21 ch0 */
+                    <NRF_PSEL(PWM_OUT1, 1, 12)>;   /* 蓝灯 P1.12, PWM21 ch1 */
+        };
+    };
+    pwm21_sleep_leds: pwm21_sleep_leds {
+        group1 {
+            psels = <NRF_PSEL(PWM_OUT0, 1, 11)>,
+                    <NRF_PSEL(PWM_OUT1, 1, 12)>;
+            low-power-enable;
+        };
+    };
+};
+
+/ {
+    pwmleds {
+        compatible = "pwm-leds";
+
+        // 双色LED使用PWM21
+        pwmred: pwmred {
+            pwms = <&pwm21 0 PWM_MSEC(20) PWM_POLARITY_NORMAL>;  /* PWM21 ch0 P1.11 */
+            label = "Red LED";
+        };
+
+        pwmblue: pwmblue {
+            pwms = <&pwm21 1 PWM_MSEC(20) PWM_POLARITY_NORMAL>;  /* PWM21 ch1 P1.12 */
+            label = "Blue LED";
+        };
+
+        // 马达使用PWM20
+        pwmmotor: pwmmotor {
+            pwms = <&pwm20 0 PWM_MSEC(20) PWM_POLARITY_NORMAL>;  /* PWM20 ch0 P1.10 */
+            label = "Vibration Motor";
+        };
+    };
+
+    aliases {
+        ledred = &pwmred;
+        ledblue = &pwmblue;
+        motor0 = &pwmmotor;
+    };
+};

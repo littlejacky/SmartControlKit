@@ -1,0 +1,7 @@
+default: mvp
+build_dir: /home/maxitai/ncs/prjs/mvp/build
+domains:
+  - name: mvp
+    build_dir: /home/maxitai/ncs/prjs/mvp/build/mvp
+flash_order:
+  - mvp
