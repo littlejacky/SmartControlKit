@@ -1,0 +1,64 @@
+# 通用 .gitignore for C/C++ & Zephyr & nRF Connect SDK
+
+# 编译输出
+build/
+*.o
+*.obj
+*.elf
+*.bin
+*.hex
+*.map
+*.out
+*.a
+*.so
+*.d
+*.exe
+*.log
+*.pyc
+*.pyo
+*.pyd
+*.swp
+*.swo
+*.swn
+*.bak
+*.tmp
+*.orig
+*.rej
+*.dSYM/
+*.DS_Store
+
+# CMake
+CMakeFiles/
+CMakeCache.txt
+cmake_install.cmake
+Makefile
+
+# Zephyr/SDK 生成
+zephyr/
+modules/
+*.mod.c
+*.cmd
+*.dts
+*.dtb
+*.dtbo
+*.lst
+*.su
+*.gcda
+*.gcno
+*.gcov
+
+# IDE/编辑器
+.vscode/
+.idea/
+*.code-workspace
+
+# Python 虚拟环境
+venv/
+.env/
+
+# 其他
+*.user
+*.sublime*
+
+# 覆盖本地配置
+prj.conf
