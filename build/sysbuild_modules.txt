@@ -1,2 +1,0 @@
-"nrf":"/home/maxitai/ncs/v3.1.0/nrf":"/home/maxitai/ncs/v3.1.0/nrf/sysbuild"
-"mcuboot":"/home/maxitai/ncs/v3.1.0/bootloader/mcuboot":"/home/maxitai/ncs/v3.1.0/bootloader/mcuboot/boot/zephyr/sysbuild"
